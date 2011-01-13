@@ -5,19 +5,17 @@
   <tr>
     <th>Coin</th>
     <th>Amount</th>
-    
   </tr>
  
 <% @change.each do |coin, amount| %>
   <tr>
     <td><%=coin %></td>
     <td><%=amount %></td>
-    
   </tr>
 <% end %>
 </table>
 <br />
 <br />
-<%= link_to "Click Here To Go Again!", :controller => "change" %>
+<%= link_to "Click Here To Do Another Calculation!", :controller => "change" %>
 <br />
 <html>
