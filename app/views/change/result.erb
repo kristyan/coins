@@ -1,0 +1,21 @@
+<html>
+<h1>Change Breakdown For <%=@coins %> Cents</h1>
+ 
+<table>
+  <tr>
+    <th>Coin</th>
+    <th>Amount</th>
+    
+  </tr>
+ 
+<% @change.each do |coin, amount| %>
+  <tr>
+    <td><%=coin %></td>
+    <td><%=amount %></td>
+    
+  </tr>
+<% end %>
+</table>
+ 
+<br />
+<html>
