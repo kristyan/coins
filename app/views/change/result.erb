@@ -1,5 +1,5 @@
 <html>
-<h1>Change Breakdown For <%=@coins %> Cents</h1>
+<h1>Change For <%=@coins %> Cents</h1>
  
 <table>
   <tr>
@@ -16,6 +16,8 @@
   </tr>
 <% end %>
 </table>
- 
+<br />
+<br />
+<%= link_to "Click Here To Go Again!", :controller => "change" %>
 <br />
 <html>
