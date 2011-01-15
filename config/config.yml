@@ -1,0 +1,15 @@
+defaults: &defaults
+  coin_set:
+      - 50
+      - 25
+      - 10
+      - 5
+      - 1
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -2,6 +2,8 @@ require 'test_helper'
 
 class ChangeCalculatorTest < ActiveSupport::TestCase
   
+  ChangeCalculator.coin_set = [50,20,10,5,2,1]
+  
   test "change for negative cents" do
     assert_raise ArgumentError do 
       ChangeCalculator.calc_min_change(-1)
