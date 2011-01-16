@@ -10,6 +10,16 @@ To start the application server in development mode locally, run script/server a
 
 You can then enter the change value in cents between 1 and 99 and the system will output the optimal change denomination
 
+== config
+  The coin set that the application uses can be configured in config.yml.
+  For example to use the coin set [50,25,10,5,1] the following is added
+  coin_set:
+    - 50
+    - 25
+    - 10
+    - 5
+    - 1
+
 == Unit Testing
 
 The change calculator can be tested by running the unit tests as follows
@@ -23,6 +33,7 @@ app/models/change_calculator.rb
 app/views/change/index.erb
 app/views/change/result.erb
 test/unit/change_calculator.rb
+config/config.yml
 
 == Files Changed
 

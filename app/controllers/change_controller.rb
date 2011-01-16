@@ -7,9 +7,9 @@ class ChangeController < ApplicationController
      @coins = params[:id].to_i
      begin
        ChangeCalculator.coin_set = APP_CONFIG['coin_set']
-       @change = ChangeCalculator.calc_min_change(@coins).sort   
+       @change = ChangeCalculator.calc_change(@coins).sort   
      rescue ArgumentError
-       # just return an empty result a bad param is given
+       # just return an empty result if a bad param is given
        @change = ChangeCalculator.empty_change_set.sort
      end     
   end
