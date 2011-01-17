@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ChangeCalculatorTest < ActiveSupport::TestCase
   
-  test "set empty coin set" do
+  test "set invalid coin set" do
     assert_raise ArgumentError do 
       ChangeCalculator.coin_set = []
     end

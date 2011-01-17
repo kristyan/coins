@@ -10,8 +10,8 @@ module ChangeCalculator
    # raises and ArgumentError if the coin set in invalid
    # a coin set is invalid if it is empty, or if it does not contain the 1 coin.
    def self.coin_set=(coin_set)
-     raise ArgumentError, "Invalid coin set and empty coin set is not allowed" if coin_set.size == 0 
-     raise ArgumentError, "Invalid coin set a coin set must contain 1" unless coin_set.include? 1
+     raise ArgumentError, "Invalid coin set: and empty coin set is not allowed" if coin_set.size == 0 
+     raise ArgumentError, "Invalid coin set: a coin set must contain 1" unless coin_set.include? 1
      @@coin_set = coin_set
      # reverse sort the coin set
      @@coin_set.sort! {|x,y| y <=> x }
